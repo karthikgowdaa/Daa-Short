@@ -21,6 +21,7 @@ def print_solutions(solutions):
     if solutions:
         for sol in solutions:
             for row in sol:
+                print("Q" if cell == 1 else ".", end=" ")
                 print(''.join(map(str, row)))
             print()
     else:
